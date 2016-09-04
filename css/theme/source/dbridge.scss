@@ -16,6 +16,10 @@
 
 // Override theme settings (see ../template/settings.scss)
 
+$db-yellow: #fdeb00;
+$db-orange: #e97724;
+$db-grey: #636466;
+
 // Background of the presentation
 $backgroundColor: #2E2E2E;
 
@@ -30,7 +34,8 @@ $mainColor: #E0E0E0;
 // Headings
 //$headingMargin: 0 0 $blockMargin 0;
 $headingFont: 'Montserrat', Impact, sans-serif;
-$headingColor: #e97724;
+$headingColor: $db-orange;
+$secondaryHeadingColor: #E0E0E0;
 //$headingLineHeight: 1.2;
 $headingLetterSpacing: -0.03em;
 $headingTextTransform: none;
@@ -50,23 +55,6 @@ $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: #F2AE7D;
 //$selectionColor: #fff;
 
-// Generates the presentation background, can be overridden
-// to return a background image or gradient
-//@mixin bodyBackground() {
-//  background: $backgroundColor;
-//}
-
-body:after {
-  //position: fixed;
-  //bottom: 10px;
-  //left: 20px;
-  //width: 100px;
-  //height: 100px;
-  //content: "";
-  //background-image: url(../../media/images/db.png);
-  //background-size: 100%;
-}
-
 aside.db-logo-footer {
   position: fixed;
   bottom: 10px;
@@ -78,7 +66,39 @@ aside.db-logo-footer {
     height: 100%;
   }
 }
+
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
 
+.reveal section img {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
+.reveal .secondary-heading-color {
+  color: $secondaryHeadingColor;
+}
+
+// Font awesome colors and styling
+.fa {
+  vertical-align: middle;
+}
+
+.fa-drupal {
+  color: #0678BE;
+}
+
+.fa-twitter {
+  color: #55acee;
+}
+
+.fa-github {
+  color: #999;
+}
+
+
+td i.fa-check {
+  color: $db-yellow;
+}
