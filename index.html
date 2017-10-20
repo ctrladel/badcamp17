@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>___PHPSTORM__</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/dbridge.css">
@@ -26,8 +26,445 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<!-- Title -->
+				<section>
+					<h2>PHPStorm and D8</h2>
+					<p>
+						<small>Presentation by Kyle Einecker</small>
+					</p>
+
+					<aside class="notes">
+						<ul>
+							<li>currently using phpstorm?</li>
+						</ul>
+					</aside>
+				</section>
+
+				<!-- About me -->
+				<section>
+					<h2>About me</h2>
+					<p class="fragment"><img src="media/images/dbridge.png"></p>
+					<span class="fragment">
+						<span>ctrlADel</span>
+						<a href="https://www.drupal.org/u/ctrladel"><i class="fa fa-drupal fa-3x" aria-hidden="true"></i></a>
+						<a href="https://github.com/ctrladel"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+					</span>
+					<p class="fragment"><a href="https://twitter.com/dbridgechicago"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i> @DBridgeChicago</a></p>
+
+					<aside class="notes">
+						<ul>
+							<li>Senior Developer, 4yrs drupal</li>
+							<li>prefer backend</li>
+						</ul>
+					</aside>
+				</section>
+
+				<!-- Lets learn about you -->
+				<section>
+					<h2>About you</h2>
+					<p class="fragment">Currently using PHPStorm?</p>
+					<p class="fragment">Currently using XDebug?</p>
+					<p class="fragment">Using automated code testing or ?</p>
+
+					<aside class="notes">
+						<ul>
+							<li>Senior Developer, 4yrs drupal</li>
+							<li>prefer backend</li>
+						</ul>
+					</aside>
+				</section>
+
+				<!-- Joke about terminal in phpstorm + vim -->
+				<section>
+					<h2>vim joke here</h2>
+
+					<aside class="notes">
+						<ul>
+							<li>Senior Developer, 4yrs drupal</li>
+							<li>prefer backend</li>
+						</ul>
+					</aside>
+				</section>
+
+				<!-- Plugins
+					- git
+					- .ignore
+					- symfony
+					- php annotations
+					- drupal bridge
+					- Key promoter x
+				-->
+				<section>
+					<h2>Plugins</h2>
+					<p class="fragment"><a href="https://www.jetbrains.com/help/phpstorm/using-git-integration.html">git</a></p>
+					<p class="fragment"><a href="https://plugins.jetbrains.com/plugin/7495--ignore">.ignore</a></p>
+					<p class="fragment"><a href="https://plugins.jetbrains.com/plugin/7219-symfony-plugin">Symfony Plugin</a></p>
+					<p class="fragment"><a href="https://plugins.jetbrains.com/plugin/7487-drupal-symfony-bridge">Drupal Symfony Bridge</a></p>
+					<p class="fragment"><a href="https://plugins.jetbrains.com/plugin/7320-php-annotations">PHP Annotations</a></p>
+					<p class="fragment"><a href="https://plugins.jetbrains.com/plugin/9792-key-promoter-x">Key Promoter X</a></p>
+
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
+				</section>
+
+				<!-- Git (quick)
+					- interface
+					- diff
+					- merge conflicts
+					- history
+					- local file history
+				-->
+				<section>
+					<section>
+					<h2>Git</h2>
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Tool window</h2>
+						<p>View > Tools Windows > Version control
+						<ul>
+							<li>Press the grey box in the bottom left of the window</li>
+							<li>Select Version control on bottom bar</li>
+						</ul></p>
+
+						<img src="media/images/git-window-1.png">
+						<img src="media/images/git-window-2.png">
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>History</h2>
+						<img src="media/images/git-1.png">
+						<img src="media/images/git-2.png">
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>Local history</h2>
+						<img src="media/images/local-history.png">
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>Diff</h2>
+						<p>Select any blue file in the git log view or git local changes view</p>
+						<p class="highlight-blue">ctrl+d</p>
+						<img src="media/images/git-dff.png">
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<!-- Code sniffing
+					- phpcs
+					- stylelint
+					- eslint
+					- sass-lint
+				-->
+				<section>
+					<section>
+						<h2>Linting and Sniffing</h2>
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>phpcs</h2>
+							<a href="https://www.drupal.org/node/1419988">Installation instructions</a><br>
+							<img src="media/images/phpcs-before.png" style="width:45%;">
+							<span>vs</span>
+							<img src="media/images/phpcs-after.png" style="width:45%;">
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>stylelint</h2>
+						<a href="https://www.drupal.org/node/2868114">Drupal change record</a>
+						<div>New in 8.4</div>
+						<div>Will be available to contrib modules and themes eventually</div>
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>eslint</h2>
+						<div><a href="https://www.drupal.org/docs/develop/standards/javascript/eslint-settings">Drupal documentation</a></div>
+						<div><a href="https://www.jetbrains.com/help/phpstorm/eslint.html">PHPStorm configuration</a></div>
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>sass-lint</h2>
+						<p>Alternative to stylelint</p>
+						<div><a href="https://plugins.jetbrains.com/plugin/8171-sass-lint">PHPStorm plugin</a></div>
+						<div><a href="https://github.com/sasstools/sass-lint">Github repo</a></div>
+
+						<img src="media/images/sass-lint-before.png" style="width:45%;">
+						<span>vs</span>
+						<img src="media/images/sass-lint-after.png" style="width:45%;">
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<!-- Navigating code
+				    - shift shift
+				    - ctrl h - hierarchy view
+				    - ctrl shift c / ctrl shift alt c - copy paths
+				    - ctrl q - show function definition
+				    - ctrl b/ctrl click - show function usage
+				    - i/h/o icons in gutter
+				-->
+				<section>
+					<section>
+						<h2>Navigating code</h2>
+						<p>Select any blue file in the git log view or git local changes view</p>
+						<p class="highlight-blue">ctrl+d</p>
+						<img src="media/images/git-dff.png">
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Search everywhere</h2>
+						<div class="highlight-blue">shift+shift</div>
+						<img src="media/images/shiftshift.png">
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Hierarchy view</h2>
+						<div class="highlight-blue">ctrl+h</div>
+						<img src="media/images/ctrlh.png" style="height: 400px;">
+						<div><a href="https://www.jetbrains.com/help/phpstorm/hierarchy-tool-window.html">PHPStorm documentation</a></div>
+						<div><a href="https://www.jetbrains.com/help/phpstorm/building-hierarchies.html">Build a hierarchy</a></div>
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Copy path</h2>
+						<div>Full path</div>
+						<div class="highlight-blue">ctrl+shift+c</div>
+						<pre><code>/home/kyle/vms/drupal-vm/drupal/web/core/lib/Drupal/Core/Block/BlockBase.php</code></pre>
+						<div>Relative path</div>
+						<div class="highlight-blue">ctrl+shift+alt+c</div>
+						<pre><code>web/core/lib/Drupal/Core/Block/BlockBase.php:29</code></pre>
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Function definition</h2>
+						<div>Works on function calls and {@inheritdoc}</div>
+						<div class="highlight-blue">ctrl+q</div>
+						<img src="media/images/ctrlq.png">
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Go to function deceleration</h2>
+						<div class="highlight-blue">ctrl+b</div>
+						<div class="highlight-blue">ctrl+click</div>
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Find usages</h2>
+						<div class="highlight-blue">alt+f7</div>
+						<img src="media/images/altf7.png">
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Gutter icons</h2>
+						<div style="float: left; width: 30%;"><div>I</div><img src="media/images/gutteri.png">
+						<div>Shows implementations of parent methods or children implementing a method.</div></div>
+						<div style="float: left; width: 30%;"><div>O</div><img src="media/images/guttero.png">
+						<div>Shows if a method is overriding a parent or is overridden by a child.</div></div>
+						<div style="float: left; width: 30%;"><div>H</div><img src="media/images/gutterh.png">
+							<div>Shows hook documentation in *api.php, all implementations of the hook, and where the hook is called.</div></div>
+
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<!-- Code completion/boiler plate code
+					- drupal console generate shout out
+					- show error on new interface
+					- Use statements
+					- show auto fill of interface functions
+					- ctrl i - implement functions
+					- ctrl o - override functions
+				-->
+				<section>
+					<section>
+						<h2>Code completion and boiler plates</h2>
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2><a href="https://drupalconsole.com/">Drupal console</a></h2>
+						<img src="media/images/drupal-console.png">
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Implement interface methods</h2>
+						<a href="https://www.drupal.org/node/2868114">Drupal change record</a>
+						<div>New in 8.4</div>
+						<div>Will be available to contrib modules and themes eventually</div>
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>eslint</h2>
+						<div><a href="https://www.drupal.org/docs/develop/standards/javascript/eslint-settings">Drupal documentation</a></div>
+						<div><a href="https://www.jetbrains.com/help/phpstorm/eslint.html">PHPStorm configuration</a></div>
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>sass-lint</h2>
+						<p>Alternative to stylelint</p>
+						<div><a href="https://plugins.jetbrains.com/plugin/8171-sass-lint">PHPStorm plugin</a></div>
+						<div><a href="https://github.com/sasstools/sass-lint">Github repo</a></div>
+
+						<img src="media/images/sass-lint-before.png" style="width:45%;">
+						<span>vs</span>
+						<img src="media/images/sass-lint-after.png" style="width:45%;">
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<!-- Patching
+					- applying patches
+					- writing contrib patches w/ composer install
+				-->
+
+				<!-- XDebug
+					- enable
+					- set break points
+					- interface overview
+					- step in/over, resume, stop
+					- conditional breakpoints
+					- code evaluation
+					- watches
+					- value change
+					- vendor mapping
+				-->
+
+				<!-- phpcbf integration -->
+
+				<!-- Other things PHPStorm does
+					- testing
+					- composer( no drupal support)
+					-
+			    -->
+
+				<!-- Questions? -->
+
 			</div>
 		</div>
 

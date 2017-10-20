@@ -206,6 +206,10 @@ body {
 .reveal small * {
   vertical-align: top; }
 
+.reveal .highlight-blue {
+  color: #0678BE;
+}
+
 /*********************************************
  * LINKS
  *********************************************/
