@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>___PHPSTORM__</title>
+		<title>PHPStorm</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/dbridge.css">
@@ -64,24 +64,11 @@
 					<h2>About you</h2>
 					<p class="fragment">Currently using PHPStorm?</p>
 					<p class="fragment">Currently using XDebug?</p>
-					<p class="fragment">Using automated code testing or ?</p>
+					<p class="fragment">Using automated code testing or sniffing?</p>
 
 					<aside class="notes">
 						<ul>
-							<li>Senior Developer, 4yrs drupal</li>
-							<li>prefer backend</li>
-						</ul>
-					</aside>
-				</section>
-
-				<!-- Joke about terminal in phpstorm + vim -->
-				<section>
-					<h2>vim joke here</h2>
-
-					<aside class="notes">
-						<ul>
-							<li>Senior Developer, 4yrs drupal</li>
-							<li>prefer backend</li>
+							<li></li>
 						</ul>
 					</aside>
 				</section>
@@ -349,6 +336,18 @@
 					</section>
 
 					<section>
+						<h2>Most actions</h2>
+						<div></div>
+						<div class="highlight-blue">alt+enter</div>
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
 						<h2>Gutter icons</h2>
 						<div style="float: left; width: 30%;"><div>I</div><img src="media/images/gutteri.png">
 						<div>Shows implementations of parent methods or children implementing a method.</div></div>
@@ -467,7 +466,7 @@
                     </section>
 
                     <section>
-                        <h2>Temporarily apply patches</h2>
+                        <h2>Apply patches</h2>
                         <div> VCS > Apply patch</div>
                         <div> VCS > Apply patch from clipboard</div>
                         <img src="media/images/applypatch.png">
@@ -521,7 +520,9 @@
 					</section>
 
 					<section>
-						<h2><a href="https://drupalconsole.com/">Enabling XDebug</a></h2>
+						<h2>Configuring XDebug</h2>
+						<div><a href="https://www.jetbrains.com/help/phpstorm/configuring-xdebug.html">PHPStorm Documentation</a></div>
+						<div><a href="https://www.drupal.org/docs/develop/development-tools/xdebug-debugger">Drupal Documentation</a></div>
 
 						<aside class="notes">
 							<ul>
@@ -531,8 +532,55 @@
 					</section>
 
 					<section>
-						<h2></h2>
+						<h2>Enabling XDebug</h2>
+						<div>Turn on browser extension</div>
+						<img src="media/images/xdebug-chrome.png">
+						<div>Turn on listening in PHPStorm</div>
+						<img src="media/images/xdebug.png">
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
 
+					<section>
+						<h2>Set breakpoints</h2>
+						<img src="media/images/xdebug-breakpoint.png">
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>XDebug interface</h2>
+						<img src="media/images/xdebug-interface.png">
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Evaluate code</h2>
+						<div class="highlight-blue">alt+f8</div>
+						<div>or right click > evaluate expression</div>
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Vendor mapping</h2>
+						<div>Make sure vendor directories are mapped correctly in </div>
+						<div><code>File > Settings > Languages & Frameworks > PHP > Servers</code></div>
 						<aside class="notes">
 							<ul>
 								<li></li>
@@ -542,14 +590,70 @@
 				</section>
 
 				<!-- phpcbf integration -->
+				<section>
+					<section>
+						<h2>phpcbf</h2>
 
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Configuration</h2>
+						<a href="https://thiagoponte.wordpress.com/2015/08/03/run-php-codesniffer-code-beautifier-and-fixer-from-phpstorm/">Setup instructions</a>
+
+						<h4>Single File</h4>
+						<pre><code>parameters: --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,js,css,info,txt,md $FileDir$/$FileName$
+working directory: $ProjectFileDir$</code></pre>
+
+						<h4>Current directory</h4>
+						<pre><code>parameters: --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,js,css,info,txt,md -l $FileDir$
+working directory: $ProjectFileDir$</code></pre>
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+				</section>
 				<!-- Other things PHPStorm does
 					- testing
-					- composer( no drupal support)
-					-
+					- composer
 			    -->
+				<section>
+					<section>
+						<h2>Other things PHPStorm does</h2>
+						<ul>
+							<li><a href="https://blog.jetbrains.com/phpstorm/2017/07/configuring-with-composer-in-phpstorm-2017-2/">Composer management</a></li>
+							<li><a href="https://plugins.jetbrains.com/plugin/8384-drupal-test-runner">Drupal test running</a></li>
+						</ul>
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+
+				</section>
 
 				<!-- Questions? -->
+				<section>
+					<section>
+						<h1>Questions?</h1>
+
+						<aside class="notes">
+							<ul>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
 
 			</div>
 		</div>
